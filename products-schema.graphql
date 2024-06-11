@@ -159,15 +159,12 @@ directive @contact(
   description: String
 ) on SCHEMA
 
+"""
+Contact Information
+"""
 extend schema
   @contact(
     name: "Products Team"
-    """
-    Name
-    """
     url: "https://myteam.slack.com/archives/teams-chat-room-url"
-    """
-    URL
-    """
     description: "Send urgent issues to [#oncall](https://yourteam.slack.com/archives/oncall)."
   )
