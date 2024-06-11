@@ -150,6 +150,9 @@ type User @key(fields: "id") {
 #ADD SUBSCRIPTION FIELDS AND RETURN TYPES HERE
 #}
 
+"""
+Contact Information
+"""
 directive @contact(
   "Contact title of the subgraph owner"
   name: String!
@@ -159,9 +162,6 @@ directive @contact(
   description: String
 ) on SCHEMA
 
-"""
-Contact Information
-"""
 extend schema
   @contact(
     name: "Products Team"
